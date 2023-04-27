@@ -1,0 +1,53 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+    font-family: Montserrat;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation_item {
+    padding: 0 20px;
+}
+
+.navigation_link {
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    display: inline-flex;
+    z-index: 1;
+}
+
+.navigation_link:before {
+    content: ' ';
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: -10px;
+    height: 50%;
+    width: 0;
+    background: #6764FF;
+    z-index: -1;
+    transition: .3s;
+}
+
+.navigation_link:hover:before {
+    width: calc(100% + 20px);
+}
