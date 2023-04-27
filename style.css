@@ -1,6 +1,7 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
+/* CSS to reset default values, make everything centered, font family and color */
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +17,17 @@ body {
     font-family: Montserrat;
 }
 
+/* CSS to make single-page effect */
+
+section {
+    display: none;
+}
+
+section:target {
+    display: block;
+}
+
+/* Making nav bar + highlight effect */
 .navigation {
     display: flex;
     align-items: center;
