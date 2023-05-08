@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="style.css">
     <script src="/assets/js/main.js" defer></script>
 </head>
-<body>
-    <main>
-        <a href=#home id="splashScreen" class="fadeIn" onclick="disappear(); firstHome();">
+<body onload="showSplash()">
+    <div id="splashScreen">
+        <a href=#home  class="fadeIn_noClick" onclick="hideSplash(); fadeInClick()">
             <h1> Welcome to my website! </h1>
             <p> Let me show you it's features</p>
         </a>
-    </main>
+    </div>
     <section id="home">
         <nav class="navigation">
             <div class="navigation_item">
@@ -34,8 +34,18 @@
             </div>
             <div class="navigation_item">
                 <a href="#contact" title="" class="navigation_link">Contact</a>
+            </div> 
+            <div class="navigation_item">
+                <a href="#other" title="" class="navigation_link"> Other </a>
             </div>
         </nav>
+        <main>
+            <div class="main_about">
+                <h3> hey there! </h3>
+                <h1> My name is David Aviles </h1>
+                <p> This website is my portfolio where you can access my socials, my github and see some of the projects I'm working on. I'm currently a student at John Bryce Training learning - you guessed it - Full Stack Web Development </p>
+            </div>    
+        </main>
     </section>
     
     <section id="about">
@@ -51,6 +61,9 @@
             </div>
             <div class="navigation_item">
                 <a href="#contact" title="" class="navigation_link">Contact</a>
+            </div> 
+            <div class="navigation_item">
+                <a href="#other" title="" class="navigation_link"> Other </a>
             </div>
         </nav>
     </section>
@@ -68,6 +81,9 @@
             </div>
             <div class="navigation_item">
                 <a href="#contact" title="" class="navigation_link">Contact</a>
+            </div> 
+            <div class="navigation_item">
+                <a href="#other" title="" class="navigation_link"> Other </a>
             </div>
         </nav>
     </section>
@@ -85,8 +101,30 @@
             </div>
             <div class="navigation_item">
                 <a href="#contact" title="" class="navigation_link">Contact</a>
+            </div> 
+            <div class="navigation_item">
+                <a href="#other" title="" class="navigation_link"> Other </a>
             </div>
         </nav>
     </section>
+
+    <section id="other">
+        <nav class="navigation">
+            <div class="navigation_item">
+                <a href="#home" title="" class="navigation_link">Home</a>
+            </div>
+            <div class="navigation_item">
+                <a href="#about" title="" class="navigation_link">About</a>
+            </div>
+            <div class="navigation_item">
+                <a href="#projects" title="" class="navigation_link">Projects</a>
+            </div>
+            <div class="navigation_item">
+                <a href="#contact" title="" class="navigation_link">Contact</a>
+            </div> 
+            <div class="navigation_item">
+                <a href="#other" title="" class="navigation_link"> Other </a>
+            </div>
+        </nav>
 </body>
 </html>
