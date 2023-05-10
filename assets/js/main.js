@@ -10,12 +10,13 @@ function fadeInClick() {
 function showSplash() {
     let splash = document.querySelector("#splashScreen");
     let currentUrl = window.location.href;
-    const desiredUrl = "http://127.0.0.1:5500/";
+    const desiredUrl = "https://veinix.github.io/black-cremeria/";
 
     if (currentUrl.endsWith(desiredUrl)) {
         splash.style.display = "block";
     }
 }
+
 function hideSplash() {
     let splash = document.querySelector("#splashScreen");
     splash.style.display="none";
